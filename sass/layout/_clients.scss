@@ -1,5 +1,11 @@
+.client-list__icon {
+  width: 106px;
+  height: 60px;
+}
+
 .client-list {
   @extend %align;
+  flex-wrap: wrap;
   gap: 30px;
   padding-left: 0;
   margin: 0;
@@ -10,7 +16,7 @@
   border: 1px solid var(--social-link-logo);
   fill: var(--social-link-logo);
   border-radius: 4px;
-  width: 170px;
+  width: 210px;
   height: 92px;
   transition: fill var(--transition-dur-and-func),
     border-color var(--transition-dur-and-func);
@@ -19,5 +25,20 @@
   &:focus {
     fill: var(--accent-color);
     border-color: var(--accent-color);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .client-list__link {
+    width: 226px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .client-list {
+    flex-wrap: nowrap;
+  }
+  .client-list__link {
+    width: 170px;
   }
 }

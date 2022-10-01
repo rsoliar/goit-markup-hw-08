@@ -1,0 +1,45 @@
+.container,
+.page-header-container,
+.advantages-container,
+.portfolio-container,
+.footer-container,
+.hero__container {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media screen and (min-width: 480px) {
+  .container,
+  .page-header-container,
+  .advantages-container,
+  .portfolio-container,
+  .footer-container,
+  .hero__container {
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container,
+  .page-header-container,
+  .footer-container,
+  .hero__container {
+    width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container,
+  .page-header-container,
+  .footer-container,
+  .hero__container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

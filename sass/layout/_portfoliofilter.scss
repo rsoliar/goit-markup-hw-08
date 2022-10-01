@@ -1,9 +1,12 @@
 .filter-list {
-  @extend %align;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0px;
+  padding: 0px;
   gap: 8px;
-  margin-top: 0;
-  margin-bottom: 50px;
-  padding-left: 0;
+  margin-bottom: 30px;
 }
 
 .filter-list__btn {
@@ -15,6 +18,7 @@
   background: var(--secondary-body-colour);
   border-radius: 4px;
   padding: 6px 22px;
+  margin-top: 15px;
   transition: color var(--transition-dur-and-func),
     background-color var(--transition-dur-and-func),
     box-shadow var(--transition-dur-and-func);
@@ -26,5 +30,25 @@
     background-color: var(--accent-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
       0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .filter-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-bottom: 30px;
+  }
+
+  .filter-list__btn {
+    margin-top: 0px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filter-list {
+    margin-bottom: 48px;
   }
 }

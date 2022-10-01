@@ -1,7 +1,8 @@
-@import "./utils/modernnormalize.scss";
+@import "./utils/_modernnormalize.scss";
 @import "./utils/_vars.scss";
 @import "./base/_styles.scss";
 @import "./utils/_placeholders.scss";
+@import "./base/container.scss";
 
 // Common components
 
@@ -9,6 +10,7 @@
 @import "./components/_header.scss";
 @import "./components/_footer.scss";
 @import "./components/_modal.scss";
+@import "./components/mobile-menu";
 
 // studio
 
