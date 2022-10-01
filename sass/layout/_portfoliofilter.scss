@@ -1,0 +1,30 @@
+.filter-list {
+  @extend %align;
+  gap: 8px;
+  margin-top: 0;
+  margin-bottom: 50px;
+  padding-left: 0;
+}
+
+.filter-list__btn {
+  font-family: inherit;
+  @include font(500, 16px, 1.62, 0.03em);
+  text-align: center;
+  color: var(--text-color);
+  border: none;
+  background: var(--secondary-body-colour);
+  border-radius: 4px;
+  padding: 6px 22px;
+  transition: color var(--transition-dur-and-func),
+    background-color var(--transition-dur-and-func),
+    box-shadow var(--transition-dur-and-func);
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--primary-body-color);
+    background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}

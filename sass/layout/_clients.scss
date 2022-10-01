@@ -1,0 +1,23 @@
+.client-list {
+  @extend %align;
+  gap: 30px;
+  padding-left: 0;
+  margin: 0;
+}
+
+.client-list__link {
+  @extend %align;
+  border: 1px solid var(--social-link-logo);
+  fill: var(--social-link-logo);
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+  transition: fill var(--transition-dur-and-func),
+    border-color var(--transition-dur-and-func);
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+    border-color: var(--accent-color);
+  }
+}

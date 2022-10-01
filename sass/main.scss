@@ -1,0 +1,24 @@
+@import "./utils/modernnormalize.scss";
+@import "./utils/_vars.scss";
+@import "./base/_styles.scss";
+@import "./utils/_placeholders.scss";
+
+// Common components
+
+@import "./components/_logo.scss";
+@import "./components/_header.scss";
+@import "./components/_footer.scss";
+@import "./components/_modal.scss";
+
+// studio
+
+@import "./layout/_hero.scss";
+@import "./layout/_features.scss";
+@import "./layout/_whatwedo.scss";
+@import "./layout/_ourteam.scss";
+@import "./layout/_clients.scss";
+
+// Portfolio
+
+@import "./layout/_portfoliofilter.scss";
+@import "./layout/_portfoliolist.scss";

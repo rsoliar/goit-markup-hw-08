@@ -1,0 +1,59 @@
+.hero {
+  background-color: var(--footer-background-color);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero.jpg);
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.hero__container {
+  width: 696px;
+  text-align: center;
+  align-items: center;
+}
+
+.hero__title {
+  @include font(900, 44px, 1.36, 0.06em);
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--primary-body-color);
+  margin-top: 0;
+  margin-bottom: 30px;
+  align-items: center;
+}
+
+.hero__button {
+  display: inline-block;
+  font-family: inherit;
+  @include font(700, 16px, 1.88, 0.06em);
+  align-items: center;
+  text-align: center;
+  color: var(--primary-body-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  width: 216px;
+  left: 692px;
+  height: 50px;
+  top: 430px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: color var(--transition-dur-and-func),
+    background-color var(--transition-dur-and-func);
+
+  &:focus,
+  &:hover {
+    color: var(--primary-body-color);
+    background-color: var(--hero-button-active);
+  }
+}
